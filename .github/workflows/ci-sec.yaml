@@ -19,10 +19,10 @@ on:
         description: 'Alasan menjalankan build manual'
         required: false
         default: 'Manual trigger'
-  permissions:
-    contents: read
-    checks: write
-    security-events: write
+permissions:
+  contents: read
+  checks: write
+  security-events: write
 
 jobs:
   quality:
