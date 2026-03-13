@@ -1,5 +1,8 @@
 ## Alur kerja CI kami mencakup beberapa lapisan pertahanan untuk menjaga integritas kode:
 
+
+![flow](./d2.png)
+
 - Audit Dependensi: Menggunakan cargo-audit untuk memeriksa kerentanan (CVE) pada crate pihak ketiga.
 - Static Analysis (SAST): Menjalankan clippy untuk menangkap anti-patterns dan potensi bug keamanan.
 - Secret Scanning: Memastikan tidak ada kredensial yang bocor dalam repositori.
