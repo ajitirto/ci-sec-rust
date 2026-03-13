@@ -18,3 +18,21 @@ gh secret set DOCKERHUB_USERNAME --body "username"
 gh secret set DOCKERHUB_TOKEN --body "token_docker_hub"
 
 ```
+
+## menbahakan kube cluster local 
+
+```bash
+
+kind create cluster --config kind-config.yaml
+
+# menambahkan ingress
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
+```
+
+## apply manifest 
+
+```bash
+
+kubectl apply -f k8s/ -R
+    
+```

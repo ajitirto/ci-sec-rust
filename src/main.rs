@@ -15,7 +15,7 @@ async fn main() {
     let app = Router::new().route("/", get(hello_world));
 
     // Menentukan alamat server
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    let addr = SocketAddr::from(([0, 0, 0, 0], 3000));
     println!("🚀 Server berjalan di http://{}", addr);
 
     // Menjalankan server
