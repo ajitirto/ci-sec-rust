@@ -13,6 +13,13 @@ on:
       - 'src/**'
       - '**/*.rs'
       - 'Cargo.toml'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Alasan menjalankan build manual'
+        required: false
+        default: 'Manual trigger'
+
 jobs:
   quality:
     name: Lint & Security Audit
