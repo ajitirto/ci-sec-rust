@@ -3,9 +3,16 @@ name: Rust Axum Security CI
 on:
   push:
     branches: [ "**" ]
+    paths:
+      - 'src/**'
+      - '**/*.rs'    
+      - 'Cargo.toml'
   pull_request:
     branches: [ "main" ]
-
+    paths:
+      - 'src/**'
+      - '**/*.rs'
+      - 'Cargo.toml'
 jobs:
   quality:
     name: Lint & Security Audit
